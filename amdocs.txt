@@ -1,0 +1,18 @@
+echo "Enter number"
+read number
+var=1
+while test $var -le 10
+do
+ echo "$number * $var"" = " $(($number*$var))
+ var=$(($var+1))
+done
+
+
+echo "Enter number"
+read number
+if test $(($number % 2)) -eq 0
+then
+   echo "It is an even number"
+else
+   echo "It is odd number"
+fi
